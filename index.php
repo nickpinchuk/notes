@@ -1,3 +1,3 @@
 <?php
 
-echo '';
+echo 'For first merge request.';
