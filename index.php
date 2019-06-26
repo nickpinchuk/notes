@@ -1,15 +1,21 @@
 <?php
 
 $mapping = array(
-    '/learning/item-array' => 'learning_item/array.php',
-    '/learning/item-functions' => 'functions.php',
-    '/learning/item-cycles' => 'cycles.php'
+    '/learning/item-array' =>
+        array('learning_item/array.php', 'Array'),
+    '/learning/item-functions' =>
+        array('functions.php', 'functions'),
+    '/learning/item-cycles' =>
+        array('cycles.php', 'cycles'),
+    '/learning/item-Files' =>
+        array('Files.php', 'Files')
 );
 
 $uri = $_SERVER['REQUEST_URI'];
 
 if (isset($mapping[$uri])) {
-    include $mapping[$uri];
+    $a = $mapping[$uri];
+    include $mapping[$uri][0];
 }
 else {
     ?>
@@ -21,7 +27,7 @@ else {
         foreach ($mapping as $uri => $path) {
             ?>
             <tr>
-                <td><a href=<?php echo $uri; ?>> Lessen</a></td>
+                <td><a href=<?php echo $uri; ?>><?php echo $path[1]; ?></a></td>
             </tr>
             <?php
         }
