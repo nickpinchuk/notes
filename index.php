@@ -1,9 +1,18 @@
 <?php
 
 $mapping = array(
-    '/learning/item-array' => 'learning_item/array.php',
-    '/learning/item-functions' => 'functions.php',
-    '/learning/item-cycles' => 'cycles.php'
+    '/learning/item-array' =>
+        array('learning_item/array.php', 'Array'),
+    '/learning/item-functions' =>
+        array('learning_item/functions.php', 'functions'),
+    '/learning/item-cycles' =>
+        array('learning_item/cycles.php', 'cycles'),
+    '/learning/item-files' =>
+        array('learning_item/Files.php', 'Files'),
+    '/learning/item-comment' =>
+        array('learning_item/Comment.php', 'Comment')
+
+
 );
 
 $uri = $_SERVER['REQUEST_URI'];
