@@ -7,8 +7,11 @@ $mapping = array(
         array('learning_item/functions.php', 'functions'),
     '/learning/item-cycles' =>
         array('learning_item/cycles.php', 'cycles'),
-    '/learning/item-Files' =>
-        array('learning_item/Files.php', 'Files')
+    '/learning/item-files' =>
+        array('learning_item/Files.php', 'Files'),
+    '/learning/item-comment' =>
+        array('learning_item/Comment.php', 'Comment')
+
 );
 
 $uri = $_SERVER['REQUEST_URI'];
