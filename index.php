@@ -9,6 +9,8 @@ $mapping = array(
         array('learning_item/cycles.php', 'cycles'),
     '/learning/item-files' =>
         array('learning_item/Files.php', 'Files'),
+    '/learning/item-files-save' =>
+        array('learning_item/Files-save.php', 'Files-save'),
     '/learning/item-comment' =>
         array('learning_item/Comment.php', 'Comment'),
     '/learning/item-forms' =>
