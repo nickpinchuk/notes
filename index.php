@@ -16,9 +16,9 @@ $mapping = array(
 );
 
 $uri = $_SERVER['REQUEST_URI'];
-
 if (isset($mapping[$uri])) {
-    include $mapping[$uri];
+    $a = $mapping[$uri];
+    include $mapping[$uri][0];
 }
 else {
     ?>
@@ -30,7 +30,7 @@ else {
         foreach ($mapping as $uri => $path) {
             ?>
             <tr>
-                <td><a href=<?php echo $uri; ?>> Lessen</a></td>
+                <td><a href=<?php echo $uri; ?>><?php echo $path[1]; ?></a></td>
             </tr>
             <?php
         }
