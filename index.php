@@ -17,7 +17,6 @@ $mapping = array(
     '/learning/item-forms' =>
         array('learning_item/forms.php', 'Forms')
 );
-
 $uri = $_SERVER['REQUEST_URI'];
 if (isset($mapping[$uri])) {
     $a = $mapping[$uri];

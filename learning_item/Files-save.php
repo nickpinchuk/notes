@@ -33,7 +33,7 @@ $info = pathinfo($_FILES['userFile']['name']);
 //$ext = $info['extension'];
 $newname = $_FILES['userFile']['name'];
 
-$target = '/var/www/firstsite.loc/html/'.$newname;
+$target = '/var/www/firstsite.loc/html/file/' . $newname;
 move_uploaded_file( $_FILES['userFile']['tmp_name'], $target);
 fclose($f);
 ?>
