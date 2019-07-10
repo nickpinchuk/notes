@@ -1,5 +1,4 @@
 <?php
-
 $mapping = array(
     '/learning/item-array' =>
         array('learning_item/array.php', 'Array'),
@@ -10,9 +9,7 @@ $mapping = array(
     '/learning/item-Files' =>
         array('Files.php', 'Files')
 );
-
 $uri = $_SERVER['REQUEST_URI'];
-
 if (isset($mapping[$uri])) {
     $a = $mapping[$uri];
     include $mapping[$uri][0];
