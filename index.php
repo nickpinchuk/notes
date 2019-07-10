@@ -3,11 +3,11 @@ $mapping = array(
     '/learning/item-array' =>
         array('learning_item/array.php', 'Array'),
     '/learning/item-functions' =>
-        array('learning_item/functions.php', 'functions'),
+        array('functions.php', 'functions'),
     '/learning/item-cycles' =>
-        array('learning_item/cycles.php', 'cycles'),
-    '/learning/item-files' =>
-        array('learning_item/Files.php', 'Files')
+        array('cycles.php', 'cycles'),
+    '/learning/item-Files' =>
+        array('Files.php', 'Files')
 );
 $uri = $_SERVER['REQUEST_URI'];
 if (isset($mapping[$uri])) {
