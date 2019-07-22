@@ -1,7 +1,5 @@
 <?php
-
 $mapping = array(
-
     '/learning/item-array' =>
         array('learning_item/array.php', 'Array'),
     '/learning/item-functions' =>
