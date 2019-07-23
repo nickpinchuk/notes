@@ -9,7 +9,9 @@ $mapping = array(
     '/learning/item-files' =>
         array('learning_item/Files.php', 'Files'),
     '/learning/item-comment' =>
-        array('learning_item/Comment.php', 'Comment')
+        array('learning_item/Comment.php', 'Comment'),
+    '/learning/item-forms' =>
+        array('learning_item/forms.php', 'Forms')
 );
 $uri = $_SERVER['REQUEST_URI'];
 if (isset($mapping[$uri])) {
